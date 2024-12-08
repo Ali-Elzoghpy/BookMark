@@ -1,0 +1,157 @@
+body {
+  background-color: #f7ecde;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: clamp(1.25rem, 4vw, 3.125rem);
+  position: relative;
+
+  display: inline-block;
+  padding: 20px;
+}
+
+::selection {
+  background-color: #fec260;
+  color: #352e28;
+}
+h1::after {
+  content: "";
+  background-color: #fec260;
+  position: absolute;
+  left: 20px;
+  height: 32px;
+
+  bottom: 10px;
+  right: 20px;
+  z-index: -1;
+  transition: height 0.6s;
+}
+h1:hover::after {
+  height: 50px;
+}
+.header h2 {
+  font-family: "Righteous", "cursive";
+  font-size: clamp(1.2rem, 4vw, 1.5625rem);
+  background-image: linear-gradient(to right, #3ca55c, #ecd801);
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  border-top: dotted 2px;
+  width: 100%;
+  padding: 20px;
+}
+.form-control:focus {
+  border: none;
+  box-shadow: 0px 0px 6px #fec260;
+}
+.my-btn {
+  background-color: #d1512d;
+  color: white;
+  padding-inline: 50px;
+  padding-block: 5px;
+  font-size: 1rem;
+}
+.my-btn:hover {
+  background-color: #bb4120;
+  color: white;
+}
+.visit-btn {
+  background-color: #a5be25da;
+  color: white;
+}
+.visit-btn:hover {
+  background-color: #9eb23b;
+  color: white;
+}
+.My-Border {
+  border-top: dotted 2px;
+  padding-top: 20px;
+}
+#modal {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.258);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalInner .my-p {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: camp(1rem,4vw,1.3125rem);
+}
+.span-circles .circle1 {
+  background-color: #f15f5d;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding-inline: 10px;
+
+  padding-block: 1px;
+}
+.span-circles .circle2 {
+  background-color: #febe2e;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding-inline: 10px;
+
+  padding-block: 1px;
+}
+.span-circles .circle3 {
+  background-color: #4db748;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding-inline: 10px;
+
+  padding-block: 1px;
+}
+#closeBtn {
+  cursor: pointer;
+}
+.Bg {
+  background-color: #febe2e;
+}
+thead tr th {
+  font-size: clamp(0.8rem, 4vw, 1.1rem);
+}
+tbody td i {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+#modal2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #0000004d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modaInner2 {
+  background-color: white;
+  padding: 30px;
+}
+
+#modalInner {
+  /* width:400px;
+  max-width: 90%;
+  height:39vh; */
+
+  background-color: white;
+  padding: .875rem
+  ;
+  padding-top: .625rem;
+  padding-bottom: 0px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark </title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="5801789.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="continer-content mb-4  text-center ">
+            <h1 class="mt-5">Bookmarker
+            </h1>
+            <a href=""></a>
+
+        </div>
+        <br>
+        <div class="header  text-center ">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+        </div>
+        <form action="">
+            <div class="mb-3">
+                <label for="siteName" class="mb-2 p-1"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input type="text" placeholder="Bookmark Name" class="form-control" id="siteName">
+                <small id="alertValid" class="alert  alert-success d-none py-0 rounded-bottom-pill">valid one!</small>
+                <small id="alertInValid" class="alert alert-danger d-none  py-0 rounded-bottom-pill">Invalid, Try to
+                    Make The First Letter Capetal</small>
+
+            </div>
+            <div>
+                <label for="siteUrl" class="mb-2 p-1"> <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+            </div>
+            <div class="text-center mt-4 mb-4">
+                <button id="submitBtn" class="btn my-btn text-center "> Submit</button>
+                <button id="editBtn" class="btn btn btn-warning py-1 d-none px-5">Edit</button>
+            </div>
+            <input id="searchInput" type="text" placeholder="Search By Name  "
+                class="form-control m-4 text-center mx-0 ">
+        
+        </form>
+        <div class="My-Border">
+            <table class="table text-center table-responsive-md ">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th> Update</th>
+                        <th> Delete <button id="deletAllButton" class="btn btn-danger p-0">Deleteall</button> </th>
+
+
+                    </tr>
+                </thead>
+                <tbody id="tableData">
+
+
+                </tbody>
+            </table>
+        </div>
+        <div id="modal" class="d-none">
+            <div id="modalInner" class="rounded-2  ">
+                <div class="span-circles mb-3 d-flex justify-content-between">
+                    <div> <span class="circle1 me-1"></span>
+                        <span class="circle2 me-1"></span>
+                        <span class="circle3"></span>
+                    </div>
+                    <i class="fa-solid fa-xmark fs-4 " id="closeBtn"></i>
+                </div>
+                <div class="instructions">
+                    <p class="my-p">Site Name or Url is not valid, Please follow the <br> rules below :</p>
+                    <p class="m-0 p-0 "> <i class="fa-regular fa-circle-right text-danger p-2"></i> Site name must
+                        contain at least 3 characters</p>
+                    <p class=""> <i class="fa-regular fa-circle-right text-danger p-2"></i> Site URL must be a valid one</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal2" class="d-none">
+            <div class="modaInner2 rounded-2">
+                <p class="alert alert-danger">Are you sure You Want To Delete All ?? <br> There is no Undo For Your List</p>
+<div class="d-flex justify-content-around">
+    <button  id="deletBtnModal" class="btn btn-danger">yes Delete All</button>
+    <button id="closeBtnModal"  class="btn btn-dark">No Dont Delete </button></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.JS"></script>
+</body>
+
+</html>
